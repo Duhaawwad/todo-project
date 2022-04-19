@@ -1,62 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo</title>
-    <style>
-        th, td {
-          border-style:solid;
-          border-color: #96D4D4;
-        }
-        </style>
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style/index.css">
+<script src="./js/app.js"></script>
 </head>
 <body>
-    <script src="./js/app.js"></script>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-    </nav>
-<h1> My websit name is ToDo</h1>
-<img src="https://www.computerhope.com/jargon/t/task.png" alt="Logo for my website">
+<div class="container">
+<img class="img" src="assets/logoTask.jpg" alt="no photo founded">
+<div class="topnav">
+  <a class="active" href="./index.html">Home</a>
+  <a href="./about.html">About Us</a>
+</div>
+</div>
+  
 
-    </header>
-    <main>
-        <table style="width:100%">
-            <tr>
-              <th>Task</th>
-              <th>Status</th>
-            
-            </tr>
-            <tr>
-              <td>Task 1</td>
-              <td>well Done</td>
-             
-            </tr>
-            <tr>
-              <td>Task 2</td>
-              <td>resubmit </td>
-             
-            </tr>
-            
-            <tr>
-              <td>Task 3</td>
-              <td>well Done </td>
-             
-            </tr>
-            
-          </table>
-
-    </main>
-<footer>
-    <h2>ToDo &copy;</h2>
-</footer>
-
-
-
+<div class="main">
+<h1 class="title">ToDo List</h1>
+<table >
+    <tr>
+      <th>Tasks</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>Task number 1  
+      <input class="check"  type="checkbox" id="task1" name="task1" value="task1" onclick="checkcolor()">
+		</td>
+      <td><div class ="backColor" id="backColor1"></div></td>
+    </tr>
+    <tr>
+      <td>Task number 2
+            <input class="check" type="checkbox" id="task2" name="task1" value="task1" onclick="checkcolor()">
+      </td>
+      <td><div class ="backColor" id="backColor2"></div></td>
+    </tr>
+    <tr>
+        <td>Task number 3
+              <input class="check" type="checkbox" id="task3" name="task1" value="task1" onclick="checkcolor()">
+        </td>
+        <td><div class ="backColor" id="backColor3"></div></td>
+      </tr>
+      <tr>
+        <td>Task number 3
+              <input class="check" type="checkbox" id="task4" name="task1" value="task1" onclick="checkcolor()">
+        </td>
+        <td><div class ="backColor" id="backColor4"></div></td>
+      </tr>
+  </table>
+</div>
+<div class="footer">
+<p class="subFooter">&copy ASAC 2022 all rights reserved</p>
+</div>
 </body>
 </html>
